@@ -18,34 +18,32 @@ Data Preparation is most important part of a machine learning project which is l
 Project can be different but steps on path to a good or even best result are generally same from project to project
   * Sometimes referred to as `applied machine learning process`, `data science process`
 ### `Applied ML Process`
- > `Step 1`: **`Define Problem`**
-    
-    * Gather data from problem domain
-    * Discuss project with subject matter experts
-    * Select those variables to be used as inputs and outputs for a predictive model   
-    * Review data that has been collected
-    * Summarize collected data using statistical methods
-    * Visualize collected data using plots and charts
+> `Step 1`: **`Define Problem`** <br>
+ 1.1. Gather data from problem domain <br>
+ 1.2. Discuss project with subject matter experts <br>
+ 1.3. Select those variables to be used as inputs and outputs for a predictive model <br>   
+ 1.4. Review data that has been collected <br>
+ 1.5. Summarize collected data using statistical methods <br>
+ 1.6. Visualize collected data using plots and charts <br>
   
- > `Step 2`: **`Data Preparation [Tasks]`** 
-Transform collected raw data as to make it more suitable for model <br> 
-  2.1. Data Cleaning <br>
-  2.2. Feature Selection <br>
-  2.3. Data Transformation <br>
-  2.4. Feature Engineering  <br>
-  2.5. Dimensionality Reduction <br>
+> `Step 2`: **`Data Preparation [Tasks]`** <br>
+Transform collected raw data as to make it more suitable for model  
+ 2.1. Data Cleaning <br>
+ 2.2. Feature Selection <br>
+ 2.3. Data Transformation <br>
+ 2.4. Feature Engineering  <br>
+ 2.5. Dimensionality Reduction <br>
 
-> `Step 3`: **`Evaluate Models`**
-
-  * Select performance metric for model evalution
-  * Select model evaluation procedure
-  * Select algorithms to Evaluate
-  * make a baseline to compare with other model
-  * reshampling technique to split data 
-    * k-fold is often used
-  * get most out of well performing model by tuning
-    * Hyperparameters 
-    * Combine predictive models into ensembles
+> `Step 3`: **`Evaluate Models`** <br> 
+ 3.1. Select performance metric for model evalution<br>
+ 3.2. Select model evaluation procedure<br>
+ 3.3. Select algorithms to Evaluate<br>
+ 3.4. make a baseline to compare with other model<br>
+ 3.5. reshampling technique to split data <br>
+    * k-fold is often used<br>
+ 3.6. get most out of well performing model by tuning<br>
+    * Hyperparameters <br>
+    * Combine predictive models into ensembles<br>
 
 > `Step 4`: **`Finalize Model`**
   * slect best performing model
@@ -55,10 +53,8 @@ Transform collected raw data as to make it more suitable for model <br>
 ---
 
 ### `Step 2`: `Data Prepration Techniques with Common Task's`
-  ##### 2.1.`Data Cleaning`: 
-  - Identifying and correcting mistakes or errors in data
-  - Data can be mistyped, corrupted, duplicated
-  - Messy, noisy, corrupt, or erroneous values must be addressed
+  ##### `2.1. Data Cleaning`: 
+  - Identifying and correcting mistakes or errors in data | Data can be mistyped, corrupted, duplicated | Messy, noisy, corrupt, or erroneous values must be addressed
   - Might involve 
     - Removing a row or a column
     - Replacing observations with new values <br> 
@@ -79,7 +75,7 @@ Transform collected raw data as to make it more suitable for model <br>
 ![Data Cleaning Overview](https://user-images.githubusercontent.com/26667491/128863018-c854c8d7-6344-4d57-9563-6d8a7369b85e.png) <br>
  
  
-##### 2.2.`Feature Selection`:     
+##### `2.2. Feature Selection`:     
 Identifying those input variables that are most relevant to target variable  <br>
 Feature Selection technique is generally grouped into Supervised(having targets) and Unsupervised(not having targets) <br> 
 * `Supervised Technique is further divided into Models that` 
@@ -96,14 +92,52 @@ Feature Selection technique is generally grouped into Supervised(having targets)
   3. `Numerical Inputs` for a `Regression Target Variable` 
 
 
-2.3. `Data Transformation`: 
-  - Changing scale or distribution of variables
+`2.3. Data Transformation`: <br>
+Changing scale,type or distribution of variables <br>
+1. `Numeric Data Type`: Number values <br>
+ * `Integer` : Integers with no fractional part <br>
+ * `Float` : Floating point values <br>
+2. `Categorical Data Type`: Label values <br>
+ * `Ordinal` : Labels with a rank ordering <br>
+ * `Nominal` : Labels with no rank ordering  <br>
+ * `Boolean` : Values True and False <br>
+![image](https://user-images.githubusercontent.com/26667491/128886257-de8213ea-43d3-4b2f-b0eb-37eadd67b59c.png) <br>
 
-2.4. `Feature Engineering`: 
-  - Deriving new variables from available data
+NOTE: Important consideration with data transforms is that operations are generally performed separately for each variable <br>
+`Discretization Transform:` Encode (to convert) a numeric variable to an ordinal variable <br>
+`Ordinal Transform:` Encode a categorical variable into an integer variable <br>
+`One Hot Transform:` Encode a categorical variable into binary variables(boolean), required on most classification tasks <br>
 
-2.5 `Dimensionality Reduction`: 
-   - Creating compact projections of data
+If the data has a Gaussian probability distribution, it may be more useful to shift data to a standard Gaussian with a mean of zero and a standard deviation of one<br>
+`Normalization Transform`: Scale a variable to range 0 and 1 <br>
+`Standardization Transform`: Scale a variable to a standard Gaussian<br>
+`Powe Transform:` Changes distribution of a variable which is nearly Gaussian, but is skewed or sifted can be made more Gaussian <br>
+`Quantile Transform:` Force a probability distribution, such as Uniform or Gaussian on a variable with an unusual natural distribution <br>
+![Overview of Data Transform Techniques](https://user-images.githubusercontent.com/26667491/128888984-288a0fa1-e1b8-40c0-9120-4871a41667f9.png) <br>
+
+
+
+`2.4. Feature Engineering`: <br>
+Deriving new variables from available data <br>
+Technuques to reuse: <br>
+1. Adding a boolean flag variable for some state
+2. Adding a group or global summary statistic, such as a mean
+3. Adding new variables for each component of a compound variable, such as a date-time <br>
+`Polynomial Transform:`Create copies of numerical input variables that are raised to a power <br>
+
+
+`2.5. Dimensionality Reduction`: <br>
+Creating compact projections of data by creating projection of data in lower-dimensional that still preserves most important properties of original data  <br>
+Common approach to dimensionality reduction is to use a `Matrix Factorization Technique` <br>
+1. `Principal Component Analysis` (PCA)
+2. `Singular Value Decomposition` (SVD)
+`Model-based methods:` <br>
+3. `Linear Discriminant Analysis`
+4. `Autoencoders`
+These techniques removes Linear Dependencies b/w input variables
+
+
+
 
 ----
 ----
