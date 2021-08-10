@@ -1,5 +1,5 @@
 # ML-Data_Preprocessing
-Also called as [ Wrangling(munging|transformation|manipulation) | Cleaning | Pre-processing | Feature Engineering ]
+can say Wrangling(munging|transformation|manipulation) | Cleaning | Pre-processing | Feature Engineering
 
 Data Preparation is most important part of a machine learning project which is least discussed and most time consuming
 * machine learning algorithms have expectations regarding
@@ -17,7 +17,9 @@ Data Preparation is most important part of a machine learning project which is l
 
 Project can be different but steps on path to a good or even best result are generally same from project to project
   * Sometimes referred to as `applied machine learning process`, `data science process`
+
 ### `Applied ML Process`
+
 > `Step 1`: **`Define Problem`** <br>
  1.1. Gather data from problem domain <br>
  1.2. Discuss project with subject matter experts <br>
@@ -143,7 +145,26 @@ Sometimes `Manifold Learning Algorithms` can also be used  <br>
 
 ----
 
+< ## `Data Processing without Leakage`
+A naive approach to preparing data applying transform on entire dataset before evaluating performance of model <br> 
+This results in a problem referred to as data leakage where knowledge of the hold-out test set leaks into dataset used to train model<br>
+Careful application of data preprocessing is required depending on model evalution scheme used such as
+1. `train-test-split`
+2. `k-fold cross validation`
+* Data processing must be done on Training set only in order to avoide data leakage <br>
 
+**`Problem with Naive Data Processing`**
+This could happen when test data is leaked into training set, or when data from future is leaked to past <br>
+`For example` <br>
+ * Consider case where we want to Normalize data, that is scale input variables to range 0-1 
+ * When we normalize input variables, this requires that we first calculate minimum and maximum values for each variable before using these values to scale variables 
+ * Dataset is then split into train and test datasets, but examples in training dataset know something about data in test dataset; they have been scaled by global minimum and maximum values, so they know more about the global distribution of variable then they should <br>
+
+`Data preprocessing must be fit on training dataset only` <br>
+1. `Split Data`
+2. `Fit Data Preparation on Training Dataset`
+3. `Apply Data Preparation to Train and Test Datasets` 
+4. `Evaluate Models`
 
 ----
 ----
