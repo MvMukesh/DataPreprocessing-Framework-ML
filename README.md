@@ -53,13 +53,14 @@ Transform collected raw data as to make it more suitable for model
 ---
 
 ### `Step 2`: `Data Prepration Techniques with Common Task's`
+  
   ##### `2.1. Data Cleaning`: 
   - Identifying and correcting mistakes or errors in data | Data can be mistyped, corrupted, duplicated | Messy, noisy, corrupt, or erroneous values must be addressed
   - Might involve 
     - Removing a row or a column
     - Replacing observations with new values <br> 
   
-  ##### 2.1.1`Common Data Cleaning Operations`:
+  ##### `2.1.1. Common Data Cleaning Operations`:
   - Using statistics to 
     - Define Normal data and 
     - Identify Outliers
@@ -86,7 +87,7 @@ Feature Selection technique is generally grouped into Supervised(having targets)
       * Correlation is popular for Scoring Input features  <br>     
 ![image](https://user-images.githubusercontent.com/26667491/128865759-9dd31eeb-59c1-47d3-ba4b-3d62c3584fef.png) <br>
 
- ##### 2.2.1.`Common Feature Selection Use Cases`:
+ ##### `2.2.1. Common Feature Selection Use Cases`:
   1. `Categorical Inputs` for a `Classification Target Variable`
   2. `Numerical Inputs` for a `Classification Target Variable` 
   3. `Numerical Inputs` for a `Regression Target Variable` 
@@ -134,14 +135,18 @@ Common approach to dimensionality reduction is to use a `Matrix Factorization Te
 `Model-based methods:` <br>
 3. `Linear Discriminant Analysis`
 4. `Autoencoders`
-These techniques removes Linear Dependencies b/w input variables
+These techniques removes Linear Dependencies b/w input variables <br>
+Sometimes `Manifold Learning Algorithms` can also be used  <br>
+5. `Self-organizing maps` (SOME)
+6. `t-Distributed Stochastic Neighbor Embedding` (t-SNE) <br>
+![Dimensionality Reduction Techniques](https://user-images.githubusercontent.com/26667491/128892627-5b1b514e-ea6d-43e4-b01e-e7ca693b3757.png)
 
+----
 
 
 
 ----
 ----
-
 > I am trying to understand :
 * Technique to `prepare data` so that it `avoids data leakage`, which lea to result of `incorrect model evaluation`
 * Technique to `identify and handle problems with messy data`, such as `outliers and missing values`
