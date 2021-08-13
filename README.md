@@ -160,13 +160,17 @@ This could happen when test data is leaked into training set, or when data from 
  * When we normalize input variables, this requires that we first calculate minimum and maximum values for each variable before using these values to scale variables 
  * Dataset is then split into train and test datasets, but examples in training dataset know something about data in test dataset; they have been scaled by global minimum and maximum values, so they know more about the global distribution of variable then they should <br>
 
-`Data preprocessing must be fit on training dataset only` <br>
+`Data preprocessing on train_test_split, processing must be fit on training dataset only` <br>
 1. `Split Data`
 2. `Fit Data Preparation on Training Dataset`
 3. `Apply Data Preparation to Train and Test Datasets` 
-4. `Evaluate Models`
+4. `Evaluate Models` <br>
 
-
+`Data preprocessing on k-Fold Cross Validation` <br>
+Defines sequence(list) of Data Preparation Steps to apply by fitting model and evaluate it <br>
+Each sequence(step) in list is a tuple having 2 element <br>
+ 1st element: name of step (string) <br>
+ 2nd element: configured object of step such as Transform or Model <br>
 
 ----
 ----
