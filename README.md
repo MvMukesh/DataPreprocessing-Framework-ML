@@ -74,9 +74,11 @@ Transform collected raw data as to make it more suitable for model
   - Imputing missing values using 
     - Statistics or 
     - A learned model
-![Data Cleaning Overview](https://user-images.githubusercontent.com/26667491/128863018-c854c8d7-6344-4d57-9563-6d8a7369b85e.png) <br>
- 
- 
+
+<p align="center">
+  <img src="https://github.com/MvMukesh/DataPreprocessing-Framework-ML/blob/main/images/data_cleaning.png" width="350" title="hover text">
+</p>
+  
 ##### `2.2. Feature Selection`:     
 Identifying those input variables that are most relevant to target variable  <br>
 Feature Selection technique is generally grouped into Supervised(having targets) and Unsupervised(not having targets) <br> 
