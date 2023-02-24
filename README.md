@@ -52,9 +52,8 @@ Transform collected raw data as to make it more suitable for model
   * production and all
 
 ---
----
 
-### `Step 2`: `Data Prepration Techniques with Common Task's`
+### `Data Prepration Techniques with Common Task's`
   
   ##### `2.1. Data Cleaning`: 
   - Identifying and correcting mistakes or errors in data | Data can be mistyped, corrupted, duplicated | Messy, noisy, corrupt, or erroneous values must be addressed
