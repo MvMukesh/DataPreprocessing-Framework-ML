@@ -75,8 +75,9 @@ Transform collected raw data as to make it more suitable for model
     - Statistics or 
     - A learned model
 
-![data_cleaning](https://user-images.githubusercontent.com/26667491/221190908-a0f9b950-7e98-4fbb-b4b6-8fa9d8c66944.png)
-
+<p align="center">
+  <kbd><img src="https://user-images.githubusercontent.com/26667491/221190908-a0f9b950-7e98-4fbb-b4b6-8fa9d8c66944.png" height='400' width='1000'/> </kbd>
+<p align="right">
   
 ##### `2.2. Feature Selection`:     
 Identifying those input variables that are most relevant to target variable  <br>
@@ -88,7 +89,9 @@ Feature Selection technique is generally grouped into Supervised(having targets)
    * Statistical Methods such as 
       * Correlation is popular for Scoring Input features  <br>     
 
-![feature_selection](https://user-images.githubusercontent.com/26667491/221196055-954c20d1-622e-4d23-a523-5b1600c8cad9.png)
+<p align="center">
+  <kbd><img src="https://user-images.githubusercontent.com/26667491/221196055-954c20d1-622e-4d23-a523-5b1600c8cad9.png" height='500' width='1000'/> </kbd>
+<p align="right">
 
  ##### `2.2.1. Common Feature Selection Use Cases`:
   1. `Categorical Inputs` for a `Classification Target Variable`
@@ -106,8 +109,9 @@ Changing scale,type or distribution of variables <br>
  * `Nominal` : Labels with no rank ordering  <br>
  * `Boolean` : Values True and False <br>
  
-![variable_type](https://user-images.githubusercontent.com/26667491/221197749-96a56ab0-e7af-461b-983b-caee7903ffdb.png)
-
+<p align="center">
+  <kbd><img src="https://user-images.githubusercontent.com/26667491/221197749-96a56ab0-e7af-461b-983b-caee7903ffdb.png" height='600' width='1000'/> </kbd>
+<p align="right">
 
 NOTE: Important consideration with data transforms is that operations are generally performed separately for each variable <br>
 `Discretization Transform:` Encode (to convert) a numeric variable to an ordinal variable <br>
@@ -120,7 +124,9 @@ If the data has a Gaussian probability distribution, it may be more useful to sh
 `Powe Transform:` Changes distribution of a variable which is nearly Gaussian, but is skewed or sifted can be made more Gaussian <br>
 `Quantile Transform:` Force a probability distribution, such as Uniform or Gaussian on a variable with an unusual natural distribution <br>
 
-![data_transformation_guide](https://user-images.githubusercontent.com/26667491/221200048-ed75b948-1a65-4e63-8520-37897f6cd0e5.png)
+<p align="center">
+  <kbd><img src="https://user-images.githubusercontent.com/26667491/221200048-ed75b948-1a65-4e63-8520-37897f6cd0e5.png" height='600' width='1000'/> </kbd>
+<p align="right">
 
 `2.4. Feature Engineering`: <br>
 Deriving new variables from available data <br>
@@ -144,7 +150,9 @@ Sometimes `Manifold Learning Algorithms` can also be used  <br>
 5. `Self-organizing maps` (SOME)
 6. `t-Distributed Stochastic Neighbor Embedding` (t-SNE) <br>
 
-![dimensionality_reduction_techniques](https://user-images.githubusercontent.com/26667491/221201714-fb618ff4-7355-4b4e-8967-56285a7e6c4e.png)
+<p align="center">
+  <kbd><img src="https://user-images.githubusercontent.com/26667491/221201714-fb618ff4-7355-4b4e-8967-56285a7e6c4e.png" height='500' width='1000'/> </kbd>
+<p align="right">
 
 ----
 
@@ -178,7 +186,7 @@ Each sequence(step) in list is a tuple having 2 element <br>
 
 ----
 ----
-> I am trying to understand :
+## `I am trying to understand`
 * Technique to `prepare data` so that it `avoids data leakage`, which lea to result of `incorrect model evaluation`
 * Technique to `identify and handle problems with messy data`, such as `outliers and missing values`
 * Technique to `identify and remove irrelevant and redundant input variables` with `feature selection methods`
@@ -208,9 +216,3 @@ Each sequence(step) in list is a tuple having 2 element <br>
 
 `Part 6`: Dimensionality Reduction
   * Remove input variables by projecting data into a lower dimensional space with dimensionality-reduction algorithms
-
----
-
-
-
-
