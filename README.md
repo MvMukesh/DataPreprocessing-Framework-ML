@@ -75,9 +75,8 @@ Transform collected raw data as to make it more suitable for model
     - Statistics or 
     - A learned model
 
-<p align="center">
-  <img src="https://github.com/MvMukesh/DataPreprocessing-Framework-ML/blob/main/images/data_cleaning.png" width="350" title="hover text">
-</p>
+![data_cleaning](https://user-images.githubusercontent.com/26667491/221190908-a0f9b950-7e98-4fbb-b4b6-8fa9d8c66944.png)
+
   
 ##### `2.2. Feature Selection`:     
 Identifying those input variables that are most relevant to target variable  <br>
@@ -88,7 +87,8 @@ Feature Selection technique is generally grouped into Supervised(having targets)
   * `Filter Model` : score each input feature and allow a subset to be selected [Feature Importance, Stats]
    * Statistical Methods such as 
       * Correlation is popular for Scoring Input features  <br>     
-![image](https://user-images.githubusercontent.com/26667491/128865759-9dd31eeb-59c1-47d3-ba4b-3d62c3584fef.png) <br>
+
+![feature_selection](https://user-images.githubusercontent.com/26667491/221196055-954c20d1-622e-4d23-a523-5b1600c8cad9.png)
 
  ##### `2.2.1. Common Feature Selection Use Cases`:
   1. `Categorical Inputs` for a `Classification Target Variable`
@@ -105,7 +105,9 @@ Changing scale,type or distribution of variables <br>
  * `Ordinal` : Labels with a rank ordering <br>
  * `Nominal` : Labels with no rank ordering  <br>
  * `Boolean` : Values True and False <br>
-![image](https://user-images.githubusercontent.com/26667491/128886257-de8213ea-43d3-4b2f-b0eb-37eadd67b59c.png) <br>
+ 
+![variable_type](https://user-images.githubusercontent.com/26667491/221197749-96a56ab0-e7af-461b-983b-caee7903ffdb.png)
+
 
 NOTE: Important consideration with data transforms is that operations are generally performed separately for each variable <br>
 `Discretization Transform:` Encode (to convert) a numeric variable to an ordinal variable <br>
@@ -117,9 +119,8 @@ If the data has a Gaussian probability distribution, it may be more useful to sh
 `Standardization Transform`: Scale a variable to a standard Gaussian<br>
 `Powe Transform:` Changes distribution of a variable which is nearly Gaussian, but is skewed or sifted can be made more Gaussian <br>
 `Quantile Transform:` Force a probability distribution, such as Uniform or Gaussian on a variable with an unusual natural distribution <br>
-![Overview of Data Transform Techniques](https://user-images.githubusercontent.com/26667491/128888984-288a0fa1-e1b8-40c0-9120-4871a41667f9.png) <br>
 
-
+![data_transformation_guide](https://user-images.githubusercontent.com/26667491/221200048-ed75b948-1a65-4e63-8520-37897f6cd0e5.png)
 
 `2.4. Feature Engineering`: <br>
 Deriving new variables from available data <br>
