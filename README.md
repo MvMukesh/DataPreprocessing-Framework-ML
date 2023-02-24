@@ -143,11 +143,13 @@ These techniques removes Linear Dependencies b/w input variables <br>
 Sometimes `Manifold Learning Algorithms` can also be used  <br>
 5. `Self-organizing maps` (SOME)
 6. `t-Distributed Stochastic Neighbor Embedding` (t-SNE) <br>
-![Dimensionality Reduction Techniques](https://user-images.githubusercontent.com/26667491/128892627-5b1b514e-ea6d-43e4-b01e-e7ca693b3757.png)
+
+![dimensionality_reduction_techniques](https://user-images.githubusercontent.com/26667491/221201714-fb618ff4-7355-4b4e-8967-56285a7e6c4e.png)
 
 ----
 
-< ## `Data Processing without Leakage`
+## `Data Processing without Leakage`
+
 A naive approach to preparing data applying transform on entire dataset before evaluating performance of model <br> 
 This results in a problem referred to as data leakage where knowledge of the hold-out test set leaks into dataset used to train model<br>
 Careful application of data preprocessing is required depending on model evalution scheme used such as
