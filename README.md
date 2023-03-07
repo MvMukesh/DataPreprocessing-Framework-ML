@@ -1,3 +1,5 @@
+![preprocessing](https://user-images.githubusercontent.com/26667491/223451533-82917fec-274f-4002-b739-a19b37c26d02.gif)
+
 # DataPreprocessing-Framework ML
 can say Wrangling(munging|transformation|manipulation) | Cleaning | Pre-processing | Feature Engineering
 
