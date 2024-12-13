@@ -1,3 +1,7 @@
+[![GitHub Issues](https://img.shields.io/github/issues/MvMukesh/DataPreprocessing-Framework-ML.svg) ![GitHub followers](https://img.shields.io/github/followers/MvMukesh.svg?style=social\&label=Follow\&maxAge=2592000)](https://github.com/MvMukesh?tab=followers) [![GitHub forks](https://img.shields.io/github/forks/MvMukesh/DataPreprocessing-Framework-ML.svg?style=social\&label=Fork\&maxAge=2592000)](https://github.com/MvMukesh/DataPreprocessing-Framework-ML/network/) [![GitHub stars](https://img.shields.io/github/stars/MvMukesh/DataPreprocessing-Framework-ML.svg?style=social\&label=Star\&maxAge=2592000)](https://github.com/MvMukesh/DataPreprocessing-Framework-ML/stargazers/)
+
+<hr>
+
 ![preprocessing](https://user-images.githubusercontent.com/26667491/223451533-82917fec-274f-4002-b739-a19b37c26d02.gif)
 
 # DataPreprocessing-Framework ML
